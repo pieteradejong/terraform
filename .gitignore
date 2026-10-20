@@ -30,3 +30,15 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+# --- added 2026-09-01 (workspace audit): baseline patterns that were missing ---
+.env
+.env.*
+!.env.example
+!.env.template
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.template
+.DS_Store
+**/.DS_Store
